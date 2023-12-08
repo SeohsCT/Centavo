@@ -75,14 +75,12 @@
                 <tr>
                     <th>Date Updated</th>
                     <th>Category</th>
-                    <th>Budget Amount</th>
-                    <th>Current Balance</th>
+                    <th>Amount</th>
                 </tr>
                 <tr>
                     <td><%= request.getAttribute("Date") %></td>
                     <td><%= request.getAttribute("Category") %></td>
-                    <td><%= request.getAttribute("BudgetAmount") %></td>
-                    <td><%= request.getAttribute("CurrentBal") %></td>
+                    <td><%= request.getAttribute("Amount") %></td>
                 </tr>
                 </table>
                 </div>
