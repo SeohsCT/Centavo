@@ -177,7 +177,7 @@ main{
     height: 250px;
     margin-left: 175px;
     padding-top: 80px;
-    border-radius: 900px;
+    border-radius: 50% / 50%;;
     flex-shrink: 0;
 }
 
