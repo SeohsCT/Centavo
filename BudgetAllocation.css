@@ -6,17 +6,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : 8 Dec, 2023, 2:42:45 AM
     Author     : User
 */
-
-
-body{
-    height: 100%;
-    width: 100%;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
 }
 
-/*HEADER*/
 .error-header {
     width: 100%;
     height: 100px;
@@ -122,7 +117,33 @@ body{
     transform: translateY(-50%);
 }
 
-/*SIDE MENU*/
+footer {
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    background-color: #00796B;
+}
+
+footer p {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.page-content{
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 75px;
+}
+
 .side-menu{
     width: 250px;
     height: 100vh;
@@ -153,58 +174,59 @@ hr{
     width: 100%;
 }
 
-/*BODY*/
-label{
-    display: inline-block;
-    text-align: right;
-}
-
 .main-content{
     flex: 1 1 0;
     padding: 0px;
     align-items: right;
-    margin: 125px 350px;
-    position: fixed;
+    margin: 80px 350px;
 }
 
-.form {
-    margin: 1px;
+form{
+    margin: 10px;
+    width: 300px; 
+    text-align: right;
+}
+
+fieldset{
+    border: none;
+}
+
+label{
+    display: block;
     padding: 10px;
 }
 
 input{
-    width: 200px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
+    width: 155px;
+    height: 25px;
 }
 
-.button-add{
-    background-color: #6CA468;
-    height: 30px;
-    width: 100px;
-    border-radius: 100px;
-    border: none;
-    color: white;
-    cursor: pointer;
+placeholder{
+    text-align: right;
 }
 
-.button-cancel{
-    background-color: #C70000;
-    height: 30px;
-    width: 100px;
-    border-radius: 100px;
-    border: none;
-    color: white;
-    cursor: pointer;
+.buttons{
+   display: flex;
+   margin-top: 20px;
+   gap: 50px;
+   justify-content: center;
+   
 }
 
 .button{
-    display: flex;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    gap: 30px;
+    height: 25px;
+    width: 80px;
+    border-radius: 100px;
+    border: none;
+    color: white;
+}
+
+.button.add{
+    background-color: #6CA468;
+}
+
+.button.cancel{
+    background-color: #C70000;
 }
 
 table {
@@ -216,11 +238,13 @@ table {
     width: 1000px;
     justify-content: center;
     background: #D1D8E0;
+    margin-top: 20px;
 }
+
 th{
     font-weight: bold;
     width: 1000px;
-    height: 50px;
+    height: 70px;
     border-spacing: 0;
     border-collapse: separate;
     border-top-radius: 15px;
@@ -228,6 +252,7 @@ th{
     text-align: center;
     padding: 10px;
 }
+
 td {
     padding: 10px;
     border: 1px solid white;
@@ -236,25 +261,3 @@ td {
     border-collapse: separate;
     border-bottom-radius: 15px;
 }
-
-/*FOOTER*/
-.footer {
-    width: 100%;
-    height: 75px;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    z-index: 1;
-    background-color: #00796B;
-}
-
-.footer p {
-    font-family: Manrope;
-    color: white;
-    margin-left: 130px;
-    margin-right: 130px;
-}
-
