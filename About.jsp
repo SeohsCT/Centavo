@@ -1,143 +1,288 @@
-<%-- 
-    Document   : index
-    Created on : 12 5, 23, 12:22:58 AM
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12 5, 23, 11:54:13 AM
     Author     : cheska
---%>
+*/
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>About</title>
-        <link rel="stylesheet" href="About.css" />
-    </head>
-    <body>
-        <header>
-            <div class="header-menu">
-                <div class="header-item">
-                    <div class="header-arrow"></div>
-                    <div class="header-text">What is Centavo</div>
-                    <div class="dropdown-content">
-                        <p>Centavo is a simple expense tracker that helps users track their spending and save money.</p>
-                    </div>
-                </div>
-                <div class="header-item">
-                    <div class="header-arrow features-arrow"></div>
-                    <div class="header-text">Features</div>
-                    <div class="dropdown-content">
-                        <p>Budget Allocation <br> Budget Tracker <br> Expense Entry</p>
-                    </div>
-                </div>
-                <div class="header-item">
-                    <div class="header-text"><a href="About.jsp">About</a></div>
-                </div>
-            </div>
-            <div class="header-logo">Centavo</div>
-            <div class="header-login">
-                <div class="login-button">
-                    <div class="button-background"></div>
-                    <div class="button-text"><a href="#">Login</a></div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="centavo-about">
-                <div >
-                    <h1>About Centavo</h1>
-                    <p>
-                    Discover financial freedom and gain unprecedented 
-                    control over your expenses with Centavo. It strives to 
-                    redefine how you approach and understand your 
-                    finances by incorporating user-friendly interfaces with 
-                    powerful features that adapt to our unique financial journey.          
-                    </p>
-                </div>
-                <img src="images/centavoLogo.png" alt="Centavo Logo" class="logo">
-            </div>
-            <br>
-            <div class="centavo-features">
-                <h1>How Centavo Expense Tracker Can Help You?</h1>
-                <br>
-                <div class="features-list">
-                    <div class="feature">
-                        <div class="feature-info">
-                            <h3>Streamlined Finances</h3>
-                            <hr>
-                            <p>
-                                Keep your finances in check by easily 
-                                tracking and categorizing your
-                                expenses in real-time.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-info">
-                            <h3>User-Friendly Interface</h3>
-                            <hr>
-                            <p>
-                                Immerse yourself in the smooth and 
-                                intuitive experience of navigating
-                                through your financial.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-info">
-                            <h3>Budget Management</h3>
-                            <hr>
-                            <p>
-                                Stay on top of your financial goals by 
-                                setting realistic budgets and track 
-                                your progress effortlessly.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="centavo-team">
-                <h1>Meet the Team</h1>
-                <br>
-                <div class="member-info">
-                    <div class="team-member">
-                        <img src="images/facturan.jpg" alt="Facturan" class="team-photo">
-                        <h4 class="team-name">Francheska Kyle Facturan</h4>
-                        <p class="position">Developer</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="images/tolentino.jpg" alt="Tolentino" class="team-photo">
-                        <h4 class="team-name">John Carl Tolentino</h4>
-                        <p class="position">Developer</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="images/timbal.jpg" alt="Timbal" class="team-photo">
-                        <h4 class="team-name">Diane Elaine Timbal</h4>
-                    <p class="position">Developer</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="centavo-contact">
-                <img src="images/contactUs.png" alt="Centavo Logo" class="contactUs-photo">
-                <div>
-                    <h1>Contact Us</h1>
-                    <p>
-                        We are here to support your financial journey. 
-                        If you have any questions or need assistance, 
-                        please feel free to reach out to us via email, 
-                        and we'll get back to you promptly.
-                    </p>
-                    <br>
-                    <p>
-                        Email: <u>johncarl.tolentino.cics@ust.edu.ph</u>
-                    </p>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <p>© Copyright 2023 Centavo LLC. All rights reserved.</p>
-            <p>ICS2608 - Machine Problem 4</p>
-        </footer>
-    </body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header and footer */
+
+header, footer{
+    height: 55px;
+    width: 100%;
+    background-color: #00796B;
+    position: fixed;
+}
+
+header{
+    top: 0;
+    left: 0;
+    position: fixed;
+    font-family: 'Lato';
+    z-index: 2;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+footer p {
+    font-family: 'Manrope';
+    color: white;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.header-menu{
+    width: 474px;
+    height: 60px;
+    position: absolute;
+    top: 18px;
+    left: 36%;
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.header-item:hover .dropdown-content {
+    display: block;
+}
+
+.header-item{
+    flex: 1;
+    height: 24px;
+    position: relative;
+    display: flex;
+}
+
+.header-text{
+    width: 100%;
+    height: 22px;
+    color: white;
+    font-size: 17px;
+    font-family: Lato;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.header-arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 4px solid white;
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.features-arrow {
+    right: 35px; /* Adjust this value as needed for the Features arrow */
+}
+
+.header-logo{
+    position: absolute;
+    left: 49px;
+    top: 10px;
+    color: white;
+    font-size: 30px;
+    font-family: 'jsMath-cmbx10';
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.header-login{
+    width: 187px;
+    height: 44px;
+    position: absolute;
+    top: 13px;
+    left: 85%;
+    display: flex;
+}
+
+.login-button{
+    width: 110px;
+    height: 30px;
+    position: relative;
+}
+
+.button-background{
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 30px;
+    border: 1.50px #CDD1E0 solid;
+}
+
+.button-text {
+    width: 100%;
+    height: 100%;
+    color: blue;
+    font-size: 17px;
+    font-family: Lato;
+    font-weight: 600;
+    word-wrap: break-word;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+}
+
+.button-text a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Manrope';
+}
+.header-bar {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    background: #00796B;
+    border-radius: 3px;
+}
+
+.header-text a {
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    font-family: 'Manrope', sans-serif;
+    align-items: center;
+    width: 100%;
+}
+
+.centavo-contact{
+    padding-top: 0;
+}
+
+.centavo-about, .centavo-contact{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    flex-shrink: 0;
+    margin: 80px auto;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.centavo-features, .centavo-team{
+    margin: 100px 0;
+}
+
+.centavo-about h1, p, .centavo-contact h1, p-{
+    margin-bottom: 20px;
+}
+
+/* photos */
+
+.team-photo{
+    width: 223.534px;
+    height: 230px;
+    flex-shrink: 0;
+    border-radius: 30px;
+}
+
+.logo, .contactUs-photo{
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+
+
+/* centavo team */
+
+.centavo-team, .centavo-features{
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 175px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.team-member h4{
+    padding-top: 15px;
+}
+
+.team-member p{
+    padding-top: 5px;
+}
+
+/* centavo features */
+
+.feature{
+    border-radius: 30px;
+    background: #009688;
+    width: 300px;
+    height: 150px;
+    flex-shrink: 0;
+    margin: 20px;
+}
+
+.feature-info{
+    padding: 10px 25px;
+}
+
+.feature-info hr{
+    border-color: black;
+}
+
+.feature h3{
+    padding: 10px;
+}
+
+.feature p{
+    padding-top: 20px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  color: white;
+}
