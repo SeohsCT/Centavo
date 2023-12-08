@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  :root {
+      --main-color1: #fefeff;
+      --main-color2: #009789;
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    padding-bottom: 100px; 
+    overflow: hidden;
+}
+
+.error-header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.header-bar {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    background: #00796B;
+    border-radius: 3px;
+}
+
+.menu {
+    width: 474px;
+    height: 24px;
+    position: absolute;
+    top: 28px;
+    left: 36%;
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    flex: 1;
+    height: 24px;
+    position: relative;
+    display: flex;
+}
+
+
+.menu-text {
+    width: 100%; 
+    height: 22px;
+    color: white;
+    font-size: 17px;
+    font-family: Lato;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center; 
+}
+
+.menu-arrow {
+    width: 19px;
+    height: 19px;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    position: absolute;
+    left: 80px; 
+    top: 5px;
+}
+
+#parent-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#logo-container {
+    max-width: 600px; 
+    text-align: center;
+    width: auto;
+}
+
+.logo {
+    position: absolute;
+    left: 49px;
+    top: 13px;
+    color: white;
+    font-size: 40px;
+    font-family: jsMath-cmbx10;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.login-container {
+    width: 187px;
+    height: 44px;
+    position: absolute;
+    top: 17px;
+    left: 85%;
+    display: flex;
+}
+
+.login-button {
+    width: 115px;
+    height: 38px;
+    position: relative;
+}
+
+.button-background {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 30px;
+    border: 1.50px #CDD1E0 solid;
+}
+
+.button-text {
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 20px;
+    font-family: Lato;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center; 
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+}
+
+  /* login page */
+  
+  #parent-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #logo-container {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--main-color1);
+  }
+  
+  #logo-container > p {
+      color: #c6c8ca;
+  }
+  
+  #logo-container > img {
+      height: 400px;
+  }
+  
+  #login-container {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #login-border-container {
+      width: 60%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      border-radius: 10px;
+  }
+  
+  #login-text-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #username-container, #password-container {
+      width: 70%;
+  }
+  
+  #login-button {
+      background-color: var(--main-color2);
+      color: var(--main-color1);
+      padding: 12px 56px;
+      border: 1px solid var(--main-color2);
+  }
+  
+  #username-container > input, #password-container  > input {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      margin-bottom: 20px;
+  }
+  
+  #username-container > label, #password-container  > label {
+      margin: 0;
+  }
+
+  /* footer */
+
+.error-footer {
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    background-color: #00796B;
+}
+
+.error-footer p {
+    font-family: Manrope;
+    color: white;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+
+
