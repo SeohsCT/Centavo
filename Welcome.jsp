@@ -45,7 +45,8 @@
             <div class="centavo-about">
                 <div class="about-content">
                     <h1>"Every Centavo Counts."</h1>
-                    <p class="about-text">
+                    <div class="oval">
+                        <p>
                         Life is full of little expenses, and every cent
                         counts. Our simple expense tracker helps
                         you stay on top of your finances by easily 
@@ -53,7 +54,8 @@
                         our user-friendly interface and insightful 
                         graphs, you'll gain a clear picture of your 
                         spending habits and make informed financial decisions.
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
             <br>
