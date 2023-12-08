@@ -10,18 +10,24 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Welcome</title>
-        <link rel="stylesheet" href="Welcome.css" />
+        <link rel="stylesheet" href="welcomepage.css" />
     </head>
     <body>
         <header>
             <div class="header-menu">
                 <div class="header-item">
-                    <div class="header-text">What is Centavo</div>
                     <div class="header-arrow"></div>
+                    <div class="header-text">What is Centavo</div>
+                    <div class="dropdown-content">
+                        <p>Centavo is a simple expense tracker that helps users track their spending and save money.</p>
+                    </div>
                 </div>
                 <div class="header-item">
-                    <div class="header-arrow"></div>
+                    <div class="header-arrow features-arrow"></div>
                     <div class="header-text">Features</div>
+                    <div class="dropdown-content">
+                        <p>Budget Allocation <br> Budget Tracker <br> Expense Entry</p>
+                    </div>
                 </div>
                 <div class="header-item">
                     <div class="header-text"><a href="About.jsp">About</a></div>
@@ -131,4 +137,3 @@
         </footer>
     </body>
 </html>
-
