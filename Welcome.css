@@ -186,20 +186,23 @@ main{
     align-items: center;
     padding: 65px 250px;
     text-align: center;
-    
+    justify-content: center;
 }
 
-.about-text{
+.oval{
     background: #00796B;
+    border-radius: 50% / 50%;
     width: 500px;
-    height: 250px;
-    margin-left: 175px;
-    padding-top: 80px;
-    border-radius: 50% / 50%;;
-    flex-shrink: 0;
+    height: 200px;
+    max-width: 100%;
+    margin: 10px auto;
 }
 
-.centavo-features, .centavo-team, centavo-testimonials{
+.oval p{
+    padding: 50px;
+}
+
+.centavo-features, centavo-testimonials{
     margin: 100px 0;
 }
 
