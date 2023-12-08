@@ -1,0 +1,260 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12 8, 23, 4:44:34 PM
+    Author     : cheska
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header and footer */
+
+header, footer{
+    height: 75px;
+    width: 100%;
+    background-color: #00796B;
+    position: fixed;
+}
+
+header{
+    top: 0;
+    left: 0;
+    font-family: 'Lato';
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+footer p {
+    font-family: 'Manrope';
+    color: white;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.header-menu{
+    width: 474px;
+    height: 24px;
+    position: absolute;
+    top: 28px;
+    left: 36%;
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-item{
+    flex: 1;
+    height: 24px;
+    position: relative;
+    display: flex;
+}
+
+.header-text{
+    width: 100%;
+    height: 22px;
+    color: white;
+    font-size: 17px;
+    font-family: Lato;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.header-arrow{
+    width: 19px;
+    height: 19px;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    position: absolute;
+    left: 80px;
+    top: 5px;
+}
+
+.header-logo{
+    position: absolute;
+    left: 49px;
+    top: 13px;
+    color: white;
+    font-size: 40px;
+    font-family: 'jsMath-cmbx10';
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.header-login{
+    width: 187px;
+    height: 44px;
+    position: absolute;
+    top: 17px;
+    left: 85%;
+    display: flex;
+}
+
+.login-button{
+    width: 115px;
+    height: 38px;
+    position: relative;
+}
+
+.button-background{
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 30px;
+    border: 1.50px #CDD1E0 solid;
+}
+
+.button-text {
+    width: 100%;
+    height: 100%;
+    color: blue;
+    font-size: 20px;
+    font-family: Lato;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+}
+
+.button-text a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Manrope';
+}
+.header-bar {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    background: #00796B;
+    border-radius: 3px;
+}
+
+.header-text a {
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    font-family: 'Manrope', sans-serif;
+    align-items: center;
+    width: 100%;
+}
+
+.centavo-about{
+    margin-top: 100px;
+    display: block;
+    align-items: center;
+    padding: 65px 250px;
+    text-align: center;
+}
+
+.about-text{
+    background: #00796B;
+    width: 500px;
+    height: 250px;
+    margin-left: 175px;
+    padding-top: 80px;
+    border-radius: 900px;
+    flex-shrink: 0;
+}
+
+.centavo-features, .centavo-team, centavo-testimonials{
+    margin: 100px 0;
+}
+
+.centavo-about h1, p {
+    margin-bottom: 20px;
+}
+
+/* centavo team */
+
+.centavo-features, .testimonial-text{
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* centavo features */
+
+.feature{
+    border-radius: 30px;
+    background: #009688;
+    width: 300px;
+    height: 150px;
+    flex-shrink: 0;
+    margin: 20px;
+}
+
+.testimonial{
+    border-radius: 30px;
+    width: 500px;
+    height: 180px;
+    flex-shrink: 0;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1.5px solid #009688;
+    justify-content: left;
+}
+
+.feature-info, .testimonial-info{
+    padding: 10px 25px;
+}
+
+.feature-info hr{
+    border-color: black;
+}
+
+.feature h3, .testimonial h3{
+    padding: 10px;
+}
+
+.feature p, .testimonial p{
+    padding-top: 20px;
+}
+
+.testimonial h3{
+    color: #727DAD;
+}
+
+.testimonial p{
+    color: black;
+}
+
+.features-list, .testimonial-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  color: white;
+}
+
+.centavo-testimonials{
+    margin-bottom: 150px;
+}
