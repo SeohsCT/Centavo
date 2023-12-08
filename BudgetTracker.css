@@ -12,90 +12,128 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     box-sizing: border-box;
 }
 
-.error-header {
+
+/*HEADER & FOOTER*/
+header, footer{
+    height: 55px;
     width: 100%;
-    height: 100px;
+    background-color: #00796B;
     position: fixed;
+}
+
+header{
     top: 0;
-    left: 0; 
+    left: 0;
+    position: fixed;
+    font-family: 'Lato';
     z-index: 2;
 }
 
-.header-bar {
-    width: 100%;
-    height: 75px;
-    position: absolute;
-    background: #00796B;
+footer {
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    padding-top: 20px;
 }
 
-.menu {
+footer p {
+    font-family: 'Manrope';
+    color: white;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.header-menu{
     width: 474px;
-    height: 24px;
+    height: 60px;
     position: absolute;
-    top: 20px;
+    top: 18px;
     left: 36%;
-    bottom: 5px;
     transform: translateX(-50%); 
     display: flex;
     justify-content: space-between;
 }
 
-.menu-item {
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.header-item:hover .dropdown-content {
+    display: block;
+}
+
+.header-item{
     flex: 1;
     height: 24px;
     position: relative;
     display: flex;
-    top: 10px;
 }
 
-.menu-text {
-    width: 100%; 
+.header-text{
+    width: 100%;
     height: 22px;
     color: white;
     font-size: 17px;
+    font-family: Lato;
     font-weight: 400;
     word-wrap: break-word;
-    text-align: center; 
-    font-family: 'Manrope', sans-serif;
+    text-align: center;
 }
 
-.menu-arrow {
-    width: 19px;
-    height: 19px;
-    transform: rotate(90deg);
-    transform-origin: 0 0;
+.header-arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 4px solid white;
+    width: 0;
+    height: 0;
     position: absolute;
-    left: 80px; 
-    top: 5px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.logo {
+.features-arrow {
+    right: 35px; /* Adjust this value as needed for the Features arrow */
+}
+
+.header-logo{
     position: absolute;
     left: 49px;
-    top: 13px;
+    top: 10px;
     color: white;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 30px;
+    font-family: 'jsMath-cmbx10';
+    font-weight: 600;
     word-wrap: break-word;
-    font-family: jsMath-cmbx10;
 }
 
-.logout-container {
+.header-logout{
     width: 187px;
     height: 44px;
     position: absolute;
-    top: 17px;
+    top: 13px;
     left: 85%;
     display: flex;
 }
 
-.logout-button {
-    width: 115px;
-    height: 38px;
+.logout-button{
+    width: 110px;
+    height: 30px;
     position: relative;
 }
 
-.button-background {
+.button-background{
     width: 100%;
     height: 100%;
     background: white;
@@ -106,37 +144,37 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 .button-text {
     width: 100%;
     height: 100%;
-    color: black;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Manrope', sans-serif;
+    color: blue;
+    font-size: 17px;
+    font-family: Lato;
+    font-weight: 600;
     word-wrap: break-word;
-    text-align: center; 
+    text-align: center;
     position: absolute;
     top: 70%;
     transform: translateY(-50%);
 }
 
-footer {
+.button-text a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Manrope';
+}
+
+.header-bar {
     width: 100%;
     height: 75px;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    z-index: 1;
-    background-color: #00796B;
+    position: absolute;
+    background: #00796B;
+    border-radius: 3px;
 }
 
-footer p {
-    font-family: 'Manrope', sans-serif;
+.header-text a {
+    text-decoration: none;
     color: white;
-    margin-left: 130px;
-    margin-right: 130px;
 }
 
+/*PAGE CONTENT*/
 .page-content{
     display: flex;
     min-height: 100vh;
@@ -144,6 +182,7 @@ footer p {
     margin-top: 75px;
 }
 
+/*SIDE MENU*/
 .side-menu{
     width: 250px;
     height: 100vh;
@@ -152,6 +191,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: left;
+    top: 50px;
 }
 
 .menu-links{
@@ -174,6 +214,7 @@ hr{
     width: 100%;
 }
 
+/*FORM*/
 .main-content{
     flex: 1 1 0;
     padding: 0px;
@@ -222,6 +263,7 @@ placeholder{
     margin-top: 5px;
 }
 
+/*TABLE*/
 table {
     border-spacing: 0;
     border-collapse: separate;
