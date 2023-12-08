@@ -125,7 +125,7 @@
                                 I like how simple it is to manually input my expenses!
                                 It motivates me to be more mindful of my spendings.
                             </p>
-                            <h3>- Rudt of 2CSD</h3>
+                            <h3>- Rudy of 2CSD</h3>
                         </div>
                     </div>
                 </div>
