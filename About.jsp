@@ -16,12 +16,18 @@
         <header>
             <div class="header-menu">
                 <div class="header-item">
-                    <div class="header-text">What is Centavo</div>
                     <div class="header-arrow"></div>
+                    <div class="header-text">What is Centavo</div>
+                    <div class="dropdown-content">
+                        <p>Centavo is a simple expense tracker that helps users track their spending and save money.</p>
+                    </div>
                 </div>
                 <div class="header-item">
-                    <div class="header-arrow"></div>
+                    <div class="header-arrow features-arrow"></div>
                     <div class="header-text">Features</div>
+                    <div class="dropdown-content">
+                        <p>Budget Allocation <br> Budget Tracker <br> Expense Entry</p>
+                    </div>
                 </div>
                 <div class="header-item">
                     <div class="header-text"><a href="About.jsp">About</a></div>
@@ -37,7 +43,7 @@
         </header>
         <main>
             <div class="centavo-about">
-                <div>
+                <div >
                     <h1>About Centavo</h1>
                     <p>
                     Discover financial freedom and gain unprecedented 
