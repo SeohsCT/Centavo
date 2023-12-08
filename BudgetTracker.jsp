@@ -13,27 +13,33 @@
         <link rel="stylesheet" href="BudgetTracker.css" />
     </head>
     <body>
+        
         <%--HEADER--%>
-        <header class="error-header">
-            <div class="header-bar"></div>
-            <div class="menu">
-                <div class="menu-item">
-                   <div class="menu-text">What is Centavo</div>
-                   <div class="menu-arrow"></div>
-               </div>
-               <div class="menu-item">
-                   <div class="menu-arrow"></div>
-                   <div class="menu-text">Features</div>
-              </div>
-              <div class="menu-item">
-                   <div class="menu-text">About</div>
-               </div>
+         <header>
+            <div class="header-menu">
+                <div class="header-item">
+                    <div class="header-arrow"></div>
+                    <div class="header-text">What is Centavo</div>
+                    <div class="dropdown-content">
+                        <p>Centavo is a simple expense tracker that helps users track their spending and save money.</p>
+                    </div>
+                </div>
+                <div class="header-item">
+                    <div class="header-arrow features-arrow"></div>
+                    <div class="header-text">Features</div>
+                    <div class="dropdown-content">
+                        <p>Budget Allocation <br> Budget Tracker <br> Expense Entry</p>
+                    </div>
+                </div>
+                <div class="header-item">
+                    <div class="header-text"><a href="About.jsp">About</a></div>
+                </div>
             </div>
-            <div class="logo">Centavo</div>
-            <div class="logout-container">
+            <div class="header-logo">Centavo</div>
+            <div class="header-logout">
                 <div class="logout-button">
                     <div class="button-background"></div>
-                    <div class="button-text">Log out</div>
+                    <div class="button-text"><a href="#">Log Out</a></div>
                 </div>
             </div>
         </header>
@@ -86,9 +92,12 @@
                 </div>
             </div>            
         </main>
+        
+        <%--FOOTER--%>
         <footer>
             <p>© Copyright 2023 Centavo LLC. All rights reserved.</p>
             <p>ICS2608 - Machine Problem 4</p>
         </footer>
+        
     </body>
 </html>
