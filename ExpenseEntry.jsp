@@ -43,7 +43,6 @@
                         <li><a href='#'><h3>Budget Tracking</h3></a></li><hr>
                         <li><a href='#'><h3>Budget Allocation</h3></a></li><hr>
                         <li><a href='ExpenseEntry.jsp'><h3>Expense Entry</h3></a></li><hr>
-                        <li><a href='Settings.jsp'><h3>Settings</h3></a></li><hr>
                     </ul>
                 </div>
                 <div class="main-content">
